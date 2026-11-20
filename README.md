@@ -1,66 +1,54 @@
-# GTA VI Trophy Guide & Tracker — PS5 (Offline)
+[![gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/c/gta6-trophy-guide-01?ref=v7znzvhb)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/akbare12/gta6-trophy-guide/rank.svg)](https://make.fun/c/gta6-trophy-guide-01?ref=v7znzvhb)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/akbare12/gta6-trophy-guide/reward.svg)](https://make.fun/c/gta6-trophy-guide-01?ref=v7znzvhb)
 
-[![Trophies](https://img.shields.io/badge/trophies-55-blue)](app/data/trophies.json)
-[![Grades](https://img.shields.io/badge/grades-1P%202G%206S%2046B-green)](app/data/trophies.json)
-[![Hidden](https://img.shields.io/badge/hidden-28-orange)](app/data/trophies.json)
-[![Sources](https://img.shields.io/badge/sources-7%20read%2020%20Nov%202026-lightgrey)](app/data/trophies.json)
-[![Offline](https://img.shields.io/badge/offline-yes-success)](app/index.html)
+# Grand Theft Auto VI — Trophy Guide & Tracker (PS5)
 
-An offline guide and progress tracker for all **55 official PlayStation 5 trophies** of
-Grand Theft Auto VI — written in the game's launch week, when no official Rockstar
-trophy list existed and several methods were still unconfirmed. Every guide step is
-written in our own words and cites its source inline. Where sources disagree, **both
-versions are shown** — never silently picked.
+An offline, static web app: a guide and tracker for the official 55 PlayStation 5 trophies of Grand Theft Auto VI. Open `app/index.html` (or run `node serve.ts` and open http://localhost:8080). No network requests, no accounts — progress lives in your browser only.
+
+Play it on make.fun: [GTA VI Trophy Guide & Tracker on make.fun](https://make.fun/c/gta6-trophy-guide-01?ref=v7znzvhb)
 
 ## What is inside
 
-- **55 trophies, 1P / 2G / 6S / 46B, 28 hidden** — names and official descriptions
-  exactly as listed by the sources; every guide has 3–6 steps, each step cited [1]–[9].
-- **The one missable trophy, flagged honestly:** Positive Mental Attitude is the only
-  possibly-missable trophy (Chapter 1 balcony meditation). The guide shows the full
-  dispute — 18 vs 15 meditations, and whether the Chapter 1 balcony meditation is
-  required — plus the consensus advice: do it in Chapter 1 and keep a Chapter 1 save.
-- **Unconfirmed, not invented:** Bad Luck, I Guess and Ten Pin have no known method in
-  any source read on 20 Nov 2026 — the guide says so and invents no steps.
-- **Single-source methods labelled:** In The Beginning…, Capital Offense and
-  The Truth Is Out There rest on PowerPyx alone and are marked "single source".
-- **Roadmap S1–S7** from Chapter 1 to the Platinum cleanup, with counts (250 stunts,
-  42 shooting-range golds, 100 WAiNK scans, $250,000 laundered, 500 profile actions…).
-- **Offline tracker:** check trophies off, filter by stage / grade / flag, hide hidden-trophy
-  spoilers, export and import your progress. No network calls at runtime.
+- **Checklist of all 55 official trophies** — names, descriptions and grades exactly as published 2026-11-18, with an interactive checklist, progress bar, grade counters, search and filters (grade, roadmap stage, story / missable / collectibles / activities / crime / side).
+- **A cited guide for every trophy** — 210 steps, 210/210 cited inline, 326 inline citations. Every step is written in our own words; citations point at the source for each fact.
+- **Roadmap to the Platinum** — 7 stages (S1 First steps → S7 Platinum) plus a NEXT UP line that always points at the earliest unearned trophy.
+- **Missables & Watch** — the one possibly-missable trophy, two to watch, three unconfirmed, three disputed between sources, three single-source. Nothing is invented: where no source knows the method, the guide says so.
+- **Spoiler setting** — hidden trophies stay concealed until earned or revealed. Export / import progress as JSON.
 
-## Sources (read 20 Nov 2026)
+## Audit (verified 20 Nov 2026)
 
-| # | Source |
-|---|--------|
-| [1] | PowerPyx — Trophy Guide & Roadmap + All Meditation Spot Locations |
-| [2] | OutputLag — GTA 6 Trophy List |
-| [3] | KeenGamer — Trophy Guide & Platinum Roadmap |
-| [4] | eGamers — Trophy List + 100% guide |
-| [7] | GTA-Zone / GTABase — Trophy List |
-| [8] | WikiGTAVI — Trophies & Achievements tracker |
-| [9] | Beebom, Push Square, Insider Gaming, gtavicecityhub (supporting figures) |
+55 trophies · 1 Platinum, 2 Gold, 6 Silver, 46 Bronze · 28 hidden · 55/55 guides cite a source · 210 steps, 210/210 cited · 326 inline citations · 7 sources read 20 Nov 2026 · 1 possibly missable · 2 watch · 3 unconfirmed · 3 disagree · 3 single-source.
 
-Exophase and PSNProfiles could not be read directly (no GTA VI page found at the time);
-the 55-name list is cross-checked across the six sources above, which agree 55/55.
+## Sources
 
-## Run it
+Guide steps cite these sources inline as [1]–[7]:
 
-```sh
-node serve.ts   # http://localhost:8080
-```
+| # | Source | Guide steps citing it |
+|---|--------|----------------------:|
+| [1] | PowerPyx — Trophy Guide & Roadmap + All Meditation Spot Locations | 202 |
+| [2] | OutputLag — GTA 6 Trophy List | 53 |
+| [3] | KeenGamer — Trophy Guide & Platinum Roadmap | 52 |
+| [4] | eGamers — Trophy List + 100% guide | 2 |
+| [5] | GTA-Zone / GTABase — Trophy List | 8 |
+| [6] | WikiGTAVI — Trophies & Achievements tracker | 5 |
+| [7] | Beebom / Push Square / Insider Gaming (supporting) | 4 |
 
-No build step, no network. Open `app/index.html` directly or serve the `app/` folder.
+Two trackers could not be read directly (Exophase has no GTA VI game page that surfaced in search; PSNProfiles had no GTA VI page as of 21 Oct 2026). The 55-name list is cross-checked across the six sources above, which agree 55/55, and the 28 hidden flags rest on two independent tables that agree exactly (OutputLag and eGamers, confirmed by GTA-Zone and WikiGTAVI).
 
-## Honesty notes
+## The Positive Mental Attitude dispute
 
-- Trophy names and descriptions are quoted from the official list as reported by the
-  sources above. All guide text is written in our own words; citing a source is not
-  copying it.
-- No Rockstar artwork, logos, box art or game screenshots are used anywhere in this app.
-- Platinum time estimates (~200 h vs 300 h+) are launch-week estimates, not measured
-  results, and are not presented as fact.
+The guide shows both versions, side by side, instead of picking one: whether the trophy needs 18 meditations or 15, and whether the Chapter 1 balcony meditation is required. The consensus advice from all sources is the same — do the balcony meditation in Chapter 1 and keep a Chapter 1 save until the trophy pops.
 
----
+## Screenshots
 
-*Made for the make.fun gta6-trophy-guide-01 bounty. Referral: `v7znzvhb`.*
+Four 1280×720 captures of the running app, each under 256 KiB:
+
+1. `1-cover.jpg` — cover: checklist + Positive Mental Attitude detail + sources + audit strip
+2. `2-pma.jpg` — Positive Mental Attitude detail (dispute box, 10 named spots, meditation counter)
+3. `3-sources.jpg` — sources panel + audit
+4. `4-roadmap.jpg` — roadmap S1–S7 + NEXT UP + audit strip
+
+## Build
+
+`node main.ts` copies `app/` and `screenshots/` to `/output` (or `$MAKEFUN_OUTPUT_DIR`) and writes `/output/dossier.json` with the vendored make.fun library (`vendor/makefun-frontend.ts`, unchanged from the kit). The dossier is byte-identical across runs (verified: two runs, same SHA-256).

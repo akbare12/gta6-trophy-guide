@@ -1,102 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA VI Trophy Guide &amp; Tracker — All 55 PS5 Trophies</title>
+<title>Grand Theft Auto VI — Trophy Guide &amp; Tracker (PS5)</title>
+<meta name="description" content="Offline guide and tracker for the official 55 PlayStation 5 trophies of Grand Theft Auto VI. Every guide step is written in our own words and cites its source inline.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <div>
+  <div class="title">
     <h1>Grand Theft Auto VI — Trophy Guide &amp; Tracker</h1>
-    <p class="sub">PlayStation 5 &middot; the official 55 trophies, 2026-11-18 &middot; every guide written in our own words, every step cited</p>
+    <p>PlayStation 5 · the official 55 trophies, 2026-11-18 · every guide written in our own words, every step cited</p>
   </div>
-  <p class="progress" id="progress">0 of 55 earned</p>
+  <div class="earned" id="earned-box" aria-live="polite"></div>
 </header>
-
-<section class="audit" id="audit" aria-label="Audit strip"></section>
-
-<div class="controls" role="search">
-  <label>Search <input id="search" type="search" placeholder="Trophy, guide text, [1]–[9]…" autocomplete="off"></label>
-  <label>Grade
-    <select id="grade">
-      <option value="all">All grades</option>
-      <option value="platinum">Platinum</option>
-      <option value="gold">Gold</option>
-      <option value="silver">Silver</option>
-      <option value="bronze">Bronze</option>
-    </select>
-  </label>
-  <label>Stage
-    <select id="stage">
-      <option value="all">All stages</option>
-      <option value="S1">S1 — First steps</option>
-      <option value="S2">S2 — Vice City</option>
-      <option value="S3">S3 — Mid-game</option>
-      <option value="S4">S4 — Heists</option>
-      <option value="S5">S5 — Side content</option>
-      <option value="S6">S6 — Cleanup</option>
-      <option value="S7">S7 — Platinum</option>
-      <option value="anytime">Anytime</option>
-    </select>
-  </label>
-  <label>Flag
-    <select id="flag">
-      <option value="all">All trophies</option>
-      <option value="possibly-missable">Possibly missable</option>
-      <option value="watch">Watch</option>
-      <option value="unconfirmed">Unconfirmed</option>
-      <option value="disagree">Sources disagree</option>
-      <option value="single source">Single source</option>
-    </select>
-  </label>
-  <label class="spoiler"><input id="spoiler" type="checkbox" checked> Hide spoilers (hidden trophies)</label>
-  <button id="export" type="button">Export progress</button>
-  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
-  <button id="reset" type="button">Reset</button>
-</div>
-
-<div class="layout">
-  <main>
-    <section id="roadmap" aria-label="Roadmap">
-      <h2>Roadmap to the Platinum</h2>
-      <p class="nextup" id="nextup"></p>
-      <div class="stages" id="stages"></div>
-    </section>
-
-    <section id="checklist" aria-label="Checklist">
-      <h2>Checklist — <span id="shown-count"></span></h2>
-      <div id="rows"></div>
-    </section>
-
-    <section id="missables" aria-label="Missables and watch list">
-      <h2>Missables &amp; Watch</h2>
-      <p class="note">One trophy can be missed, two need watching, three are unconfirmed, three are disputed between sources and three rest on a single source. Do the Chapter 1 balcony meditation early and keep a Chapter 1 save until Positive Mental Attitude pops.</p>
-      <div id="flag-groups"></div>
-    </section>
-  </main>
-
-  <aside>
-    <section id="detail" aria-label="Trophy detail"></section>
-    <section id="sources" aria-label="Sources">
-      <h2>Sources</h2>
-      <p class="note">Guide steps cite these sources inline as [1]–[9]. Nothing here is copied: every step is written in our own words.</p>
-      <table class="matrix" id="matrix"></table>
-    </section>
-    <section id="settings" aria-label="Settings">
-      <h2>Settings</h2>
-      <label class="spoiler"><input id="spoiler2" type="checkbox" checked> Hide spoilers (hidden trophy names, descriptions and guides)</label>
-      <p class="note">Progress lives only in this browser (localStorage). Nothing is sent over the network — this page works fully offline once loaded.</p>
-      <p class="note">Data: the official 55-trophy list as published 2026-11-18. Counts: 1 Platinum, 2 Gold, 6 Silver, 46 Bronze; 28 hidden; 55/55 guides carry inline source citations.</p>
-      <button id="reset2" type="button">Reset progress</button>
-    </section>
-  </aside>
-</div>
-
-<footer>
-  <p>Unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive; no artwork or logos are used here. Referral code v7znzvhb.</p>
-</footer>
+<div class="audit" id="audit-strip" role="note"></div>
+<nav class="tabs" id="tabs" aria-label="Views"></nav>
+<div class="toolbar" id="toolbar"></div>
+<main id="view"></main>
+<footer class="foot" id="foot"></footer>
+<noscript><p style="padding:16px">This guide needs JavaScript: it renders the checklist, the roadmap and the cited guides from its local data file.</p></noscript>
 <script type="module" src="app.js"></script>
 </body>
 </html>
